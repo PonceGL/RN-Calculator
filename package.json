@@ -10,8 +10,8 @@
     "typeslint": "yarn types && yarn lint",
     "types": "tsc --noEmit",
     "start": "react-native start",
-    "test": "jest",
-    "prepare": "husky"
+    "test": "jest --collect-coverage --no-cache --runInBand",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -28,6 +28,9 @@
     "@react-native/eslint-config": "0.74.83",
     "@react-native/metro-config": "0.74.83",
     "@react-native/typescript-config": "0.74.83",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.5.0",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
