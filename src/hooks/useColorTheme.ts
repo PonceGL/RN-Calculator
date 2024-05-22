@@ -16,5 +16,5 @@ export const useColorTheme = () => {
     }
   }, [isDarkMode]);
 
-  return { colors };
+  return { colors, isDarkMode };
 };
