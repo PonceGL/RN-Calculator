@@ -1,18 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { useColorTheme } from '../../hooks/useColorTheme';
+import { NumberPad } from '../../components/NumberPad';
 
 export function Home(): JSX.Element {
-  const { colors } = useColorTheme();
   return (
     <View style={styles.content}>
-      <Text
-        style={{
-          color: colors.text,
-        }}>
-        Home
-      </Text>
+      <NumberPad />
     </View>
   );
 }
@@ -20,6 +14,6 @@ export function Home(): JSX.Element {
 const styles = StyleSheet.create({
   content: {
     flex: 1,
-    minHeight: 300,
+    flexDirection: 'row',
   },
 });

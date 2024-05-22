@@ -31,12 +31,8 @@ module.exports = {
     'react-native/no-raw-text': 0,
     'react-native/no-single-element-style-arrays': 2,
     'react-hooks/exhaustive-deps': 0,
-    'no-console': [
-      'error',
-      {
-        allow: ['warn', 'error'],
-      },
-    ],
+    'prefer-const': 'warn',
+    'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
     '@typescript-eslint/no-empty-function': 0,
     'react/prop-types': 0,
     'prettier/prettier': [

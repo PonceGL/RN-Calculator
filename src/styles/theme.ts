@@ -19,14 +19,14 @@ const BaseColors = {
 };
 
 export const LightColors: ColorsTheme = {
-  primary_600: '#1B64AD',
-  primary_300: '#2E5798',
-  primary_50: '#7491BA',
+  primary_600: '#C6CFFF',
+  primary_300: '#E8D3FF',
+  primary_50: '#DEECFF',
   text: '#1C1C1C',
   text_light: '#F4F4F4',
-  neutral_600: '#F3F3F3',
+  neutral_600: '#F8FCFB',
   neutral_300: '#F6F6F6',
-  neutral_500: '#FEFEFE',
+  neutral_500: '#D6E4F0',
   ...BaseColors,
 };
 

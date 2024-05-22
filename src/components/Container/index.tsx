@@ -10,7 +10,8 @@ export function Container({ children }: PropsWithChildren): JSX.Element {
     <SafeAreaView
       style={{
         backgroundColor: colors.neutral_600,
-      }}>
+      }}
+    >
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={colors.neutral_600}
