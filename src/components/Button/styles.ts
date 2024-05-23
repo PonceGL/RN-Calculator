@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     padding: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 4,
   },
   text: {
     fontSize: 22,

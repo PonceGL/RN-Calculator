@@ -13,6 +13,6 @@ describe('useButtonWidth', () => {
       .spyOn(Dimensions, 'get')
       .mockReturnValue({ width: 360, height: 818, scale: 2, fontScale: 2 });
     const { result } = renderHook(() => useButtonWidth());
-    expect(result.current.buttonWidth).toBe(87.8048780487805);
+    expect(result.current.buttonWidth).toBe(85.71428571428571);
   });
 });

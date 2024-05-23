@@ -25,7 +25,7 @@ export const LightColors: ColorsTheme = {
   text: '#1C1C1C',
   text_light: '#F4F4F4',
   neutral_600: '#F8FCFB',
-  neutral_300: '#F6F6F6',
+  neutral_300: '#EEF7FF',
   neutral_500: '#D6E4F0',
   ...BaseColors,
 };

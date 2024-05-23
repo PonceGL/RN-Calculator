@@ -9,11 +9,7 @@ export const useColorTheme = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   useEffect(() => {
-    if (isDarkMode) {
-      setColors(DarkColors);
-    } else {
-      setColors(LightColors);
-    }
+    setColors(isDarkMode ? DarkColors : LightColors);
   }, [isDarkMode]);
 
   return { colors, isDarkMode };
