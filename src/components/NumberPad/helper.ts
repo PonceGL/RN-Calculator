@@ -1,7 +1,12 @@
-import { Keyboard, Numbers, Operator, SpecialKeys } from '../../types/Keyborad';
+import {
+  KeyboardKeys,
+  Numbers,
+  Operator,
+  SpecialKeys,
+} from '@poncegl/calculator';
 
 export function getLayout() {
-  const customList: Keyboard[] = [
+  const customList: KeyboardKeys[] = [
     SpecialKeys.CLEAR,
     SpecialKeys.AMBIGUITY,
     Operator.PERCENTAGE,
@@ -26,6 +31,6 @@ export function getLayout() {
   return { KeyboardKeys: customList };
 }
 
-export const isNumber = (element: Keyboard) =>
+export const isNumber = (element: KeyboardKeys) =>
   Object.values(Numbers).includes(element);
-export const isDot = (element: Keyboard) => element === SpecialKeys.DOT;
+export const isDot = (element: KeyboardKeys) => element === SpecialKeys.DOT;

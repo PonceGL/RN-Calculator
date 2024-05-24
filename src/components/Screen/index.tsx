@@ -5,8 +5,11 @@ import { useColorTheme } from '../../hooks/useColorTheme';
 import { useFontSize } from '../../hooks/useFontSize';
 import { styles } from './styles';
 
-export function Screen(): JSX.Element {
-  const operation = '0234'; // TODO: this should be a external state
+interface ScreenProps {
+  operation: string;
+}
+
+export function Screen({ operation }: ScreenProps): JSX.Element {
   const { colors } = useColorTheme();
   const { size } = useFontSize(operation);
   return (
@@ -19,6 +22,8 @@ export function Screen(): JSX.Element {
             color: colors.text,
           },
         ]}
+        ellipsizeMode="head"
+        numberOfLines={1}
       >
         {operation}
       </Text>

@@ -1,8 +1,8 @@
 import React from 'react';
+import { Numbers } from '@poncegl/calculator';
 import { render } from '@testing-library/react-native';
 
 import { Button } from '../../../src/components/Button';
-import { Numbers } from '../../../src/types/Keyborad';
 
 describe('Button', () => {
   it('renders correctly', () => {

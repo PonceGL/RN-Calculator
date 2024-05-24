@@ -1,14 +1,14 @@
 import React from 'react';
 import { ColorValue, Pressable, Text } from 'react-native';
+import { KeyboardKeys } from '@poncegl/calculator';
 
 import { useColorTheme } from '../../hooks/useColorTheme';
-import { Keyboard } from '../../types/Keyborad';
 import { getWidth } from './helper';
 import { styles } from './styles';
 
 interface ButtonProps {
-  keyboardKey: Keyboard;
-  pressKey: (keyboardKey: Keyboard) => void;
+  keyboardKey: KeyboardKeys;
+  pressKey: (keyboardKey: KeyboardKeys) => void;
   width?: number;
   textColor?: ColorValue;
   backgroundColor?: ColorValue;

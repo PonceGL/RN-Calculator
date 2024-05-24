@@ -2,12 +2,16 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   content: {
-    height: 70,
+    flex: 1,
     padding: 4,
-    alignItems: 'flex-end',
+  },
+  list: {
+    borderWidth: 1,
+    borderColor: '#003285',
   },
   text: {
     textAlign: 'right',
-    textAlignVertical: 'bottom',
+    fontSize: 16,
+    marginVertical: 2,
   },
 });

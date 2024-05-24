@@ -20,7 +20,7 @@ export function useFontSize(text: string) {
     if (!firsSize && !secondSize) {
       setCurrentSize(defaultSize.current);
     }
-  }, [text]);
+  }, [text, width]);
 
   return {
     size: currentSize,
