@@ -32,5 +32,5 @@ export function getLayout() {
 }
 
 export const isNumber = (element: KeyboardKeys) =>
-  Object.values(Numbers).includes(element);
+  Object.values(Numbers).includes(element as Numbers);
 export const isDot = (element: KeyboardKeys) => element === SpecialKeys.DOT;

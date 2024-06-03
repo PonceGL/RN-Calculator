@@ -2340,10 +2340,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@poncegl/calculator@file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.11.tgz::locator=calculator%40workspace%3A.":
-  version: 1.0.0-beta.11
-  resolution: "@poncegl/calculator@file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.11.tgz#/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.11.tgz::hash=96b0f0&locator=calculator%40workspace%3A."
-  checksum: 10c0/afbcbc2fe34a6cb038231c52e0421c552392fa40a878ab53427790725ead5e87682d04c665e34ecfc19d2d8c34bc9c9bd95abc8f53e2a224c45c84ce1cbf6429
+"@poncegl/calculator@file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.16.tgz::locator=calculator%40workspace%3A.":
+  version: 1.0.0-beta.16
+  resolution: "@poncegl/calculator@file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.16.tgz#/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.16.tgz::hash=3ebcfb&locator=calculator%40workspace%3A."
+  checksum: 10c0/b24b00970eb86c9c03dc2ed240b6e98d52a247be44b674bd9c18eb174827659d1a5637df8bdc94021887b407287c8b9dfe26ba4beb264066b8b65fd1fca6249d
   languageName: node
   linkType: hard
 
@@ -4067,7 +4067,7 @@ __metadata:
     "@babel/runtime": "npm:^7.20.0"
     "@commitlint/cli": "npm:^19.3.0"
     "@commitlint/config-conventional": "npm:^19.2.2"
-    "@poncegl/calculator": "file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.11.tgz"
+    "@poncegl/calculator": "file:/Users/ponciano.guevara@digitalfemsa.com/Downloads/test_projects/TypeScript/calculator/packs/poncegl-calculator-1.0.0-beta.16.tgz"
     "@react-native-community/eslint-config": "npm:^3.2.0"
     "@react-native/babel-preset": "npm:0.74.83"
     "@react-native/eslint-config": "npm:0.74.83"

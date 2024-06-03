@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, Text } from 'react-native';
 
 import { useColorTheme } from '../../hooks/useColorTheme';
 import { styles } from './styles';
@@ -8,34 +8,31 @@ interface HistoryProps {
   history: string[];
 }
 
-const History = memo(function HistoryComponent({
-  history,
-}: HistoryProps): JSX.Element {
+const HistoryComponent = ({ history }: HistoryProps): JSX.Element => {
   const { colors } = useColorTheme();
   return (
-    <View style={styles.content}>
-      <FlatList
-        data={history.reverse()}
-        renderItem={({ item }) => (
-          <Text
-            key={item}
-            style={[
-              styles.text,
-              {
-                color: colors.text,
-              },
-            ]}
-          >
-            {item}
-          </Text>
-        )}
-        keyExtractor={item => item}
-        inverted={true}
-        showsHorizontalScrollIndicator={false}
-        bounces={false}
-      />
-    </View>
+    <FlatList
+      data={[...history].reverse()}
+      renderItem={({ item }) => (
+        <Text
+          key={item}
+          style={[
+            styles.text,
+            {
+              color: colors.text,
+            },
+          ]}
+        >
+          {item}
+        </Text>
+      )}
+      keyExtractor={(item, index) => `${item}-${index}`}
+      inverted={true}
+      showsHorizontalScrollIndicator={false}
+      bounces={false}
+    />
   );
-});
+};
+const History = memo<HistoryProps>(HistoryComponent);
 
 export { History };

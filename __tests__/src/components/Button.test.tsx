@@ -9,6 +9,7 @@ describe('Button', () => {
     const { getByText } = render(
       <Button
         keyboardKey={Numbers.ZERO}
+        // eslint-disable-next-line no-console
         pressKey={pressKey => console.log('pressKey => ', pressKey)}
       />
     );

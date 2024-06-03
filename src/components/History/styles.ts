@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     padding: 4,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   list: {
     borderWidth: 1,
     borderColor: '#003285',

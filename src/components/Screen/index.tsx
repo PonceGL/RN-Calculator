@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 
 import { useColorTheme } from '../../hooks/useColorTheme';
 import { useFontSize } from '../../hooks/useFontSize';
+import { useFormatOperation } from '../../hooks/useFormatOperation';
 import { styles } from './styles';
 
 interface ScreenProps {
@@ -12,6 +13,8 @@ interface ScreenProps {
 export function Screen({ operation }: ScreenProps): JSX.Element {
   const { colors } = useColorTheme();
   const { size } = useFontSize(operation);
+  const { formatText } = useFormatOperation(operation);
+
   return (
     <View style={styles.content}>
       <Text
@@ -25,7 +28,7 @@ export function Screen({ operation }: ScreenProps): JSX.Element {
         ellipsizeMode="head"
         numberOfLines={1}
       >
-        {operation}
+        {formatText}
       </Text>
     </View>
   );
